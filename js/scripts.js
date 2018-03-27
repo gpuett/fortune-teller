@@ -12,8 +12,14 @@ $(function() {
       luckyArray.push(lucky);
       return luckyArray;
     });
-    console.log(unluckyArray);
-    console.log(luckyArray);
+    if (unluckyArray.length > luckyArray.length) {
+      $("#badFortune").show();
+    } else if (luckyArray.length > unluckyArray.length) {
+      $("#goodFortune").show();
+    } else {
+      $("#noFortune").show();
+    }
+    $("#fortune").hide();
   event.preventDefault();
   });
 });
