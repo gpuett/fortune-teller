@@ -13,23 +13,27 @@
         <h1>Fortune Teller</h1>
       </div>
       <form id="fortune">
-        <div class="form-group" id="unlucky">
-          <input type="checkbox" name="unlucky" value="blackcat">Seeing a blackcat<br>
-          <input type="checkbox" name="unlucky" value="mirror">Breaking a mirror<br>
-          <input type="checkbox" name="unlucky" value="ladder">Walking under a ladder<br>
-          <input type="checkbox" name="unlucky" value="umbrella">Opening a umbrella inside<br>
+        <div>
+          <label for="name">Enter your name:</label>
+          <input type="text" id="name" name="name" class="form-control">
+          <br>
         </div>
-        <div class="form-group" id="lucky">
-          <input type="checkbox" name="lucky" value="clover">Finding a four-leaf clover<br>
-          <input type="checkbox" name="lucky" value="chimney">Seeing a chimney sweep<br>
-          <input type="checkbox" name="lucky" value="penny">Finding a penny heads-up<br>
-          <input type="checkbox" name="lucky" value="buddha">Rubbing a buddha's belly<br>
+        <div class="form-group" id="prompts">
+          <label for="fortune">Which of these have you done recently?</label><br>
+          <input type="checkbox" name="unlucky" value="blackcat"> Saw a blackcat<br>
+          <input type="checkbox" name="lucky" value="clover"> Found a four-leaf clover<br>
+          <input type="checkbox" name="lucky" value="chimney"> Saw a chimney sweep<br>
+          <input type="checkbox" name="unlucky" value="umbrella"> Opened a umbrella inside<br>
+          <input type="checkbox" name="lucky" value="penny"> Found a penny heads-up<br>
+          <input type="checkbox" name="unlucky" value="ladder"> Walked under a ladder<br>
+          <input type="checkbox" name="lucky" value="buddha"> Rubbed a buddha's belly<br>
+          <input type="checkbox" name="unlucky" value="mirror"> Broke a mirror<br>
         </div>
         <button type="submit" class="btn btn-success" name="button">See your fortune!</button>
       </form>
-      <p id="badFortune">You have bad fortune!</p>
-      <p id="goodFortune">You have good fortune!</p>
-      <p id="noFortune">You have no fortune!</p>
+      <p id="badFortune"><span class="name"></span>, you will be cursed with 10 years of celibacy!</p>
+      <p id="goodFortune"><span class="name"></span>, you will soon acquire wealth and love! Rejoice in your great fortune!</p>
+      <p id="noFortune"><span class="name"></span>, you have no fortune! Your life will forever be the same.</p>
     </div>
   </body>
 </html>

@@ -19,6 +19,8 @@ $(function() {
     } else {
       $("#noFortune").show();
     }
+    var name = $("#name").val();
+    $(".name").text(name);
     $("#fortune").hide();
   event.preventDefault();
   });
