@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <title>Fortune Teller</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Fortune Teller</h1>
+      </div>
+      <form id="fortune">
+        <div class="form-group" id="unlucky">
+          <input type="checkbox" name="unlucky" value="blackcat">Seeing a blackcat<br>
+          <input type="checkbox" name="unlucky" value="mirror">Breaking a mirror<br>
+          <input type="checkbox" name="unlucky" value="ladder">Walking under a ladder<br>
+          <input type="checkbox" name="unlucky" value="umbrella">Opening a umbrella inside<br>
+        </div>
+        <div class="form-group" id="lucky">
+          <input type="checkbox" name="lucky" value="clover">Finding a four-leaf clover<br>
+          <input type="checkbox" name="lucky" value="chimney">Seeing a chimney sweep<br>
+          <input type="checkbox" name="lucky" value="penny">Finding a penny heads-up<br>
+          <input type="checkbox" name="lucky" value="buddha">Rubbing a buddha's belly<br>
+        </div>
+        <button type="submit" class="btn btn-success" name="button">See your fortune!</button>
+      </form>
+      <span id="userFortune"></span>
+    </div>
+  </body>
+</html>
